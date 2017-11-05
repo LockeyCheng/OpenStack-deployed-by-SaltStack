@@ -1,0 +1,11 @@
+include:
+  - chrony.install
+  - rabbitmq.install
+  - memcached.install
+  - mariadb.install
+  - openstack.keystone
+  - openstack.glance
+  - openstack.novactl
+  - openstack.neutronctl
+  - openstack.dashboard
+  - openstack.cinderctl

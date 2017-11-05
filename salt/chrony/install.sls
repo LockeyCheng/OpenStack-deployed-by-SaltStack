@@ -10,9 +10,10 @@ chronyd-install:
     - mode: 644
     - template: jinja
     - context:
-        timeServer: {{ pillar['server'] }}
+        timeServer: {{ pillar['timeserver'] }}
         allowClient: {{ pillar['allow'] }}
-
+  cmd.run:
+    - name: yum upgrade -y && yum -y install python-openstackclient
 chronyd-service:
   service.running:
     - name: chronyd.service

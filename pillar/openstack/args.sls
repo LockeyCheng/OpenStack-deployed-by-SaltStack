@@ -1,0 +1,23 @@
+{% if grains['host'] == 'ok-vm1' %}
+timeserver: 'controller'
+myip: '192.168.0.182'
+interface: 'eno16777736'
+{% else %}
+timeserver: 'time1.aliyun.com'
+myip: '192.168.0.162'
+interface: 'eno16777736'
+{% endif %}
+allow: 'allow 192.168/16'
+controller: '192.168.0.162'
+admin_token: '0e23925d3d52f10a3cab'
+keystonepwd: 'keystone'
+demopwd: 'demo'
+glancepwd: 'glance'
+novapwd: 'nova'
+adminpwd: 'admin'
+neutronpwd: 'neutron'
+cinderpwd: 'cinder'
+rabbitpwd: 'openstack'
+metadatapwd: 'lockey23'
+systemdev: 'sda'
+cinderdev: 'sdb'

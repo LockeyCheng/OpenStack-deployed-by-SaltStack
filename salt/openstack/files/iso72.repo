@@ -1,9 +1,0 @@
-[iso72]
-name=iso72 repo
-baseurl=http://192.168.1.106/iso72/
-gpgcheck=0
-
-[open]
-name=open
-baseurl=http://192.168.1.106/open/
-gpgcheck=0

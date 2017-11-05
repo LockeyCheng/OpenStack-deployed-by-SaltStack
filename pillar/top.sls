@@ -1,3 +1,3 @@
 base:
   '*':
-    - openstack.chrony
+    - openstack.args
